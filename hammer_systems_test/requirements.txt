@@ -1,0 +1,6 @@
+Django==2.2.19
+django-phonenumber-field==6.1.0
+djangorestframework==3.13.1
+phonenumbers==8.12.45
+pytz==2022.1
+sqlparse==0.4.2
