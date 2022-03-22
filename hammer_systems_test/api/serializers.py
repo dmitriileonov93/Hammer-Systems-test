@@ -8,7 +8,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('phone_number', 'inviter_code', 'invited_users')
+        fields = ('phone_number', 'owner_invite_code', 'inviter_code', 'invited_users')
 
     def get_invited_users(self, obj):
         users = User.objects.filter(

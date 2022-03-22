@@ -16,6 +16,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'dmitriileonov93.pythonanywhere.com',
     'www.dmitriileonov93.pythonanywhere.com',
+    '127.0.0.1',
+    'localhost',
 ]
 
 # Application definition
@@ -81,8 +83,12 @@ WSGI_APPLICATION = 'hammer_systems_test.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ivzimcsc',
+        'USER': 'ivzimcsc',
+        'PASSWORD': 'MBPMnKKRB7HvwZA4WyZTkHatJlpRiZws',
+        'HOST': 'rogue.db.elephantsql.com',
+        'PORT': '5432'
     }
 }
 
